@@ -47,7 +47,7 @@ while True:
     # Upload to S3
     conn = tinys3.Connection(cfg['s3']['access_key_id'], cfg['s3']['secret_access_key'])
     f = open(filepath, 'rb')
-    conn.upload(filepath, f, cfg['s3']['bucket_name'],
+    conn.upload(filepath, f, cfg['s3']['bucket_name'], public=False,
                headers={
                'x-amz-meta-cache-control': 'max-age=60'
                })
