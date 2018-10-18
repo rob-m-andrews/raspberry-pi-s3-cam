@@ -7,15 +7,20 @@
 - Ensure Raspberry Pi Camera has been enabled:
   - Running `sudo raspi-config` will get you into the settings to enable
 
-- Install the `python-picamera` library:
+- Install the `python3-picamera` library:
   ```
   sudo apt-get update
-  sudo apt-get install python-picamera
+  sudo apt-get install python3-picamera
   ```
 
-- Install `tinys3` library: `pip install tinys3`
-- Install `pyyaml` library: `pip install pyyaml`
+- Install pip3:
+  ```
+  sudo apt-get install python3-pip
+  ```
+
+- Install `tinys3` library: `pip3 install tinys3`
+- Install `pyyaml` library: `pip3 install pyyaml`
 - Update `config.yml` and provide S3 credentials as well as specify a bucket name
 
 ## Running 
-`python s3cam.py`
+`python3 s3cam.py`
