@@ -2,6 +2,7 @@ s3:
     access_key_id: 'your_access_key_id__here'
     secret_access_key: 'your_secret_access_key_here'
     bucket_name: 'bucket_name_here'
+    region: 'your_bucket_region'
 
 image_settings:
     horizontal_res: 640
@@ -11,5 +12,11 @@ image_settings:
     folder_name: 'images'
     awb_mode: 'auto'
     photo_interval: 60
+    rotation: 0
+    zoom:
+            - 0.0
+            - 0.0
+            - 1.0
+            - 1.0
 
 debug: true
